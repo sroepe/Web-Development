@@ -1,0 +1,44 @@
+@media only screen and (max-width: 480px){
+  .med, .lg , title.med, title.lg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+  .sm, .lg, title.sm, title.lg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .sm, .med {
+    display: none;
+  }
+}
+
+#container {
+  font-family: sans-serif;
+}
+
+.row {
+  margin: 10px 15px 10px 15px;
+  border: 1px solid gold;
+  padding: 5px;
+}
+
+#r1 {
+  background-color: darkgrey;
+}
+
+#r2 {
+  background-color: lightgray;
+}
+
+#r3 {
+  background-color: rgb(241, 241, 122);
+}
+
+span {
+  font-weight: bold;
+}
+
