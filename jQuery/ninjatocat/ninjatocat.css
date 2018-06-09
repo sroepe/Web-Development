@@ -1,0 +1,24 @@
+/*reset*/
+* {
+	outline: 0px;
+	padding: 10px 0px 0px 10px;
+	margin: 0px;
+	border: 0px;
+  }
+body {
+  width: 500px;
+  height: auto;
+}
+
+button {
+  width: 400px;
+  height: auto;
+  display: block;
+  }
+
+img {
+  width: 400px;
+  height: auto;
+  display: inline-block;
+  margin: 0px auto;
+}

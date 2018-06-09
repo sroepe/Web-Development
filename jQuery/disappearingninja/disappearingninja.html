@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="disappearingninja.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>console.log($())</script>
+    <script> //enter doc.ready or doc.on
+        $(document).ready(function(){
+        
+        for (var i = 1; i < 9; i++){
+          $("#vanishdiv").prepend( $('<button class="dogimg"><img class="vanishimg" src="jquery_images/puppy.jpg" alt="an adorable puppy"></button>'));
+          
+          $(".dogimg").click(function(){
+            $(this).hide("slow");
+          })
+          $("#restoreimg").click(function(){
+            $(".dogimg").show(function(){
+            })
+          })
+        }      
+        
+        })
+    </script>
+	</head>
+	<body>
+    <div id="vanishdiv">
+
+        
+      <button id="restoreimg">Restore</button>
+    </div>
+
+
+    
+	</body>
+</html>

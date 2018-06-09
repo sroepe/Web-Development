@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ninja to Cat!</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="ninjatocat.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>console.log($())</script>
+    <script> 
+        $(document).ready(function(){
+        
+          $("img").click(function(){
+            $(this).attr("temp", $(this).attr("src"));
+            $(this).attr("src", $(this).attr("data-alt-src"));
+            $(this).attr("data-alt-src", $(this).attr("temp"));
+          
+          })
+
+          /*$("img").click(function(){
+            $(this).attr("temp", $(this).attr("src"));
+            $(this).attr("src", $(this).attr("data-alt-src"));
+            $(this).attr("alt-src", $(this).attr("temp"));*/
+        })  
+
+    </script>
+	</head>
+	<body>
+
+    <img src = "ninjacat/ninja0.png" data-alt-src="ninjacat/cat0.png" temp=""/><br>
+    <img src = "ninjacat/ninja1.png" data-alt-src="ninjacat/cat1.png" temp=""/><br>
+    <img src = "ninjacat/ninja2.png" data-alt-src="ninjacat/cat2.png" temp=""/><br>
+    <img src = "ninjacat/ninja3.png" data-alt-src="ninjacat/cat3.png" temp=""/><br>
+    <img src = "ninjacat/ninja4.png" data-alt-src="ninjacat/cat4.png" temp=""/>
+    
+	</body>
+</html>

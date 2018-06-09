@@ -1,0 +1,36 @@
+/*reset*/
+* {
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+  }
+  #vanishdiv {
+    background-color: pink;
+    width: 970px;
+    height: 735px;
+    display: inline-block;
+  }
+
+  .dogimg {
+    width: 200px;
+    height: 296px;
+    margin: 15px;
+    border: 2px blueviolet solid;
+  }
+
+  .vanishimg {
+    width: 196px;
+    height: auto;
+  }
+
+  #restoreimg {
+    height: 35px;
+    width: 100px;
+    background-color: purple;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 1px 1px 0px darkslategray;
+    display: inline-block;
+    margin: 15px 0px 0px 15px;
+  }

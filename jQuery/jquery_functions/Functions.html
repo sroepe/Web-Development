@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sara's jQuery Functions</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="functions.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>console.log($())</script>
+    <style>
+    
+    .red {
+      color: red;
+    }
+
+    </style>
+    <script>
+      $(document).ready(function(){
+
+      $("#click").click(function(){
+          alert("You clicked on a button!");
+
+      console.log();
+      })
+      $("#hide").click(function(){
+        $("#gone").hide(function(){
+        })
+
+      console.log();
+      })
+
+      $("#show").click(function(){
+        $("#gone").show(function(){
+        })
+
+      console.log();
+      })
+
+      $("#toggle").click(function(){
+        $("#dog").toggle(function(){
+        })
+
+      console.log();
+      })
+
+      $("#drink").hide(function(){
+      $("#slided").click(function(){
+        $("#drink").slideDown(function(){
+        })
+        })
+        console.log();
+      })
+
+      $("#slideu").click(function(){
+        $("#drinkup").slideUp(function(){
+        })
+
+        console.log();
+      })
+      
+      $("#slidetog").click(function(){
+        $("#dog_tog").slideToggle(function(){
+        })
+
+      console.log();
+      })
+
+      $("#dog_fade").hide(function(){
+      $("#fadein").click(function(){
+        $("#dog_fade").fadeIn(function(){
+        })
+      })
+
+      console.log();
+      })
+
+      $("#fadeout").click(function(){
+        $("#dog_out").fadeOut(function(){
+        })
+
+      console.log();
+      })
+
+      $("#add_class").click(function(){
+        $("#redp").addClass("red");
+
+      console.log();
+      })
+      
+      $("#after").click(function(){
+        $("#pimg").after( $('<img src="jquery_images/minions.jpg" alt="Minions Meme">') );
+
+      console.log();
+      })
+
+      $("#before").click(function(){
+        $(".butdiv").before( $('<img src="jquery_images/minions.jpg" alt="Minions Meme">') );
+
+      console.log();
+      })
+
+      $("#append").click(function(){
+        $("#appenddiv").append( $("<p class='newp'>It's super cool to be able to add a new paragraph to your HTML!</p>") );
+      })
+
+      $("#html").click(function(){
+        $("#replace").html( $("<p>I replaced the text that appeared here before!</p>") );
+      })
+
+      $("#attribute").click(function(){
+        $("#osfriday").attr({
+          height: "50px",
+          width: "auto"
+        });
+      })
+
+      $("#valbut").click(function(){
+        $("#valbut").val("Value");
+      })
+
+      $("#text").click(function(){
+        $("#textadd").text( "I just used the text method in jQuery." );
+      }) 
+
+      $("#data").click(function(){
+        $(".datap").data( "fullname", { first: "Sara", last: "Roepe"} );
+        $("span:first").text ( $ (".datap").data("fullname").first);
+        $("span:last").text ( $ (".datap").data("fullname").last);
+      })
+    })
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <form>    
+        
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Click</h1>
+          <input type="button" value="Click Here!" id="click" name="click">
+          <p>Click the button and an alert box will appear!</p>
+        </div>
+        
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Hide</h1>
+          <input type="button" value="Hide Text" id="hide" name="hide">
+          <p id="gone">Click the button and this text will disappear.</p>
+        </div>
+        
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Show</h1>
+          <input type="button" value="Show Text" id="show" name="show">
+          <p>Click the button to show the text that disappeared above!</p>
+        </div>
+        
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Toggle</h1>
+          <input type="button" value="Toggle Image" id="toggle" name="toggle">
+          <p>Click the button to toggle an image!</p>
+          <img id="dog" src="jquery_images/friday.jpg" alt="Friday Dog Meme"> 
+        </div>
+        
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Slide Down</h1>
+          <input type="button" value="Slide Down" id="slided" name="slided">
+          <p>Click the button to have text appear downward!</p>
+          <p id="drink">See how this text appeared below the paragraph above?!?!</p>
+        </div>
+        
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Slide Up</h1>
+          <input type="button" value="Slide Up" id="slideu" name="slideu">
+          <p>Click the button to have text disappear upward.</p>
+          <p id="drinkup">This text will disappear!!!</p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Slide Toggle</h1>
+          <input type="button" value="Slide Toggle" id="slidetog" name="slidetog">
+          <p>Click the button to slide toggle the text shown below.</p>
+          <p id="dog_tog">Friday is the absolute best day of the week...Saturday and Sunday aren't bad either:)</p>
+        </div> 
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Fade In</h1>
+          <input type="button" value="Fade In" id="fadein" name="fadein">
+          <p>Click the button to fade an image in.</p>
+          <img id="dog_fade" src="jquery_images/friday.jpg" alt="Friday Dog Meme">
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Fade Out</h1>
+          <input type="button" value="Fade Out" id="fadeout" name="fadeout">
+          <p>Click the button to fade an image out.</p>
+          <img id="dog_out" src="jquery_images/friday.jpg" alt="Friday Dog Meme">
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Add Class</h1>
+          <input type="button" value="Add Class" id="add_class" name="add_class">
+          <p id="redp">Click the button to add 'red' to this paragraph.</p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>After</h1>
+          <input type="button" value="After" id="after" name="after">
+          <p id="pimg">Click the button to add an image after this paragraph.</p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Before</h1>
+          <div class="butdiv">
+            <input type="button" value="Before" id="before" name="before">
+            <p id="preimg">Click the button to add an image before this paragraph and the button.</p>
+          </div>
+        </div>
+
+        <div class="funcbox" id="appenddiv"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Append</h1>
+          <input type="button" value = "Append" id="append" name="append">
+          <p>Click the button to append a new paragraph.</p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>HTML</h1>
+          <input type="button" value = "HTML" id="html" name="html">
+          <p id="replace">Click the button to replace this paragraph with a new one.</p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Attribute</h1>
+          <input type="button" value = "Attribute" id="attribute" name="attribute">
+          <p>Click the button to change the size of the photo below to a thumbnail.</p>
+          <img id="osfriday" src="jquery_images/officespace.jpg" alt="Office Space Meme">
+        </div>
+
+        <div class="funcbox" id="valdiv"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Value</h1>
+          <input id="valbut" type="button">
+          <p>Click the button to add a value to the button.</p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Text</h1>
+          <input type="button" value = "Text" id = "text">
+          <p>Click the button to show text added to a div.</p>
+          <p id="textadd"></p>
+        </div>
+
+        <div class="funcbox"> <!-- "funcbox" is the class for styling the elements of all boxes. --> 
+          <h1>Data</h1>
+          <input type="button" value = "Data" id = "data">
+          <p>Click the button to retrieve stored data.</p>
+          <div class="datap">
+            My First Name is
+            <span></span>
+            and My Last Name is
+            <span></span>
+          </div>
+        </div>
+      </form> 
+    </div>
+  </body>
+</html>

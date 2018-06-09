@@ -1,0 +1,36 @@
+/*reset*/
+* {
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+  }
+body {
+  margin: 15px;
+  display: inline-block;
+}
+
+table {
+  border: 1px solid black;
+  width: 500px;
+  table-layout: fixed;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 300px;
+}
+
+input {
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+label {
+  margin: 10px;
+  display: inline-block;
+}
+
+h1 {
+  border-bottom: 2px solid gray;
+}

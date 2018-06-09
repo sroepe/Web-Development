@@ -1,0 +1,43 @@
+/*reset*/
+* {
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+  }
+
+#wrapper {
+  width: 970px;
+  height: auto;
+  background-color: aqua;
+  padding: 20px;
+}
+.funcbox {
+  width: 954px;
+  height: auto;
+  background-color: rgb(56, 38, 211);
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 18px;
+  padding-left: 10px;
+  border: 2px solid grey;
+}
+input {
+  width: 110px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  border: 1px solid grey;
+  border-radius: 5px; 
+  box-shadow: 0px 1px 1px 1px rgb(40, 40, 40);
+  font: 14pt bold;
+  margin-bottom: 10px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 10px; 
+}
