@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Pokemon Characters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script> 
+      $(document).ready(function(){
+
+        var HTMLstring = ""; 
+          
+        for(var i = 1; i < 152; i++){ 
+            HTMLstring += '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/'+[i]+'.png">';
+          
+          $.get= ($(HTMLstring)), function(res){
+            console.log(res);
+          }, "json";
+        }  
+
+        $("body").append($(HTMLstring)), function(res){
+        }, "json";
+          
+      })
+         
+    </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>
