@@ -1,0 +1,82 @@
+/*CSS reset settings here*/
+*{
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+  }
+ #wrapper{
+  width: 970px;
+  background-color: rgb(57, 45, 133);
+  padding: 10px;
+ }
+ #header{
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(224, 61, 46);
+  border-radius: 10px;
+  color: lightgray;
+  padding: 10px;
+ }
+ #main-content{
+  height: 450px;
+  width: 765px;
+  line-height: 20px;
+  font-size: 0.83em;
+  background-color: rgb(5, 9, 43);
+  display: inline-block;
+  border-radius: 15px;
+  color: lightgray;
+  padding: 10px 0px 0px 10px;
+  vertical-align: top;
+  margin: 20px 0px 0px 20px;
+ }
+ #side-menu{
+  height: 160px;
+  width: 150px;
+  background-color: rgb(7, 129, 129);
+  display: inline-block;
+  border-radius: 15px;
+  color: aqua;
+  padding: 10px 0px 0px 15px;
+  margin-top: 20px;
+  font-size: 0.7em;
+ }
+ #footer{
+  height: 30px;
+  background-color: rgb(117, 114, 114);
+  border-radius: 15px;
+  color: lightgray;
+  padding: 20px 10px 10px 15px;
+  margin-top: 20px;
+  font-size: 0.6em;
+ }
+ #sublist{
+  list-style-type: circle; 
+  list-style-position: inside;
+  text-indent: 15px;
+ }
+ #inlinelist.li{
+   margin: 10px 0px;
+   font-size: 0.7em;
+   line-height: 20px;
+   margin-top: 20px;
+ }
+ #side-menu a {
+  color: aqua;
+ }
+ #navlist li {
+   color: aqua;
+ }
+ ul{  
+  list-style-position: inside;
+ }
+ p{
+  line-height: 17px; 
+ }
+ h2{
+   line-height: 35px;
+ }
+ span{
+   color: mediumblue 
+ }

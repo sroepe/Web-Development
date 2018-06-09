@@ -1,0 +1,66 @@
+/*CSS reset settings here*/
+*{
+	outline: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+  }
+ #wrapper{
+  width: 970px;
+  background-color: darkslateblue;
+  margin: 0px auto;
+  padding: 10px;
+ }
+ #header{
+  height: 75px;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+ }
+ #main_content{
+  height: 500px;
+  width: 700px;
+  background-color: darkblue;
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+ }
+ #side-menu{
+  height: 200px;
+  width: 175px;
+  background-color: teal;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  color: aqua;
+ }
+ #footer{
+  height: 50px;
+  background-color: rgb(117, 114, 114);
+  padding: 10px;
+  border-radius: 15px;
+  color: aliceblue;
+ }
+ .inline{
+   color: aliceblue;
+ }
+ .inlinelist{
+   display: inline;
+ }
+ }
+ .bullettype{
+  list-style: open circle; 
+  color: aliceblue;   
+ }
+ h2{
+   color: aliceblue;
+ }
+ a{
+  color: aqua;
+ }
+ li{
+   margin-left: 13px;   
+ }
+ p{
+   color: aliceblue;
+ }
